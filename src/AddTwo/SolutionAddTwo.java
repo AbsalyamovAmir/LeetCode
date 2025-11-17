@@ -1,9 +1,9 @@
 package AddTwo;
 
 public class SolutionAddTwo {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode head = new ListNode(0);
-        ListNode cur = head;
+    public ListNodeAddTwo addTwoNumbers(ListNodeAddTwo l1, ListNodeAddTwo l2) {
+        ListNodeAddTwo head = new ListNodeAddTwo(0);
+        ListNodeAddTwo cur = head;
         int carry = 0;
         int total = 0;
 
@@ -22,7 +22,7 @@ public class SolutionAddTwo {
 
             carry = total / 10;
             total = total % 10;
-            cur.next = new ListNode(total);
+            cur.next = new ListNodeAddTwo(total);
             cur = cur.next;
         }
         return head.next;

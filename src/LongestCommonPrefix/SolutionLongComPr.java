@@ -2,10 +2,44 @@ package LongestCommonPrefix;
 
 public class SolutionLongComPr {
     public String longestCommonPrefix(String[] strs) {
-        //TODO перерешать
-        return "";
+        String pr = strs[0];
+        int lengthPr = pr.length();
+
+        for (int i = 1; i < strs.length; i++) {
+            String p = strs[i];
+            int lengthP = p.length();
+            while (lengthPr > lengthP || !pr.equals(p.substring(0, lengthPr))) {
+                lengthPr--;
+
+                if (pr.isEmpty()) {
+                    return "";
+                }
+
+                pr = pr.substring(0, lengthPr);
+            }
+        }
+        return pr;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
