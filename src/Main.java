@@ -4,6 +4,7 @@ import LongestCommonPrefix.SolutionLongComPr;
 import MergeSortedLinkedLists.ListNodeMergeLinkList;
 import MergeSortedLinkedLists.SolutionMergeLinkList;
 import ValidParentheses.SolutionValidParent;
+import findIndexInString.SolutionFindIndex;
 import longestPolindromeSubstr.SolutionLongPolinSubstr;
 import longestsubstring.SolutionLongSub;
 import removeDuplicatesFromSortedArray.SolutionRemDuplFromSortArray;
@@ -27,6 +28,11 @@ public class Main {
 
         SolutionRevValFromSortArray solutionRevValFromSortArray = new SolutionRevValFromSortArray();
         solutionRevValFromSortArray.removeElement(new int[] {3,2,2,3}, 3);
+
+        SolutionFindIndex findIndex = new SolutionFindIndex();
+        int result = findIndex.strStr("sadbutsad", "sad");
+//        int result1 = findIndex.strStr("leetcode", "leeto");
+        System.out.println(result);
     }
 
     private static void solutionRemDuplFromSortArray() {
